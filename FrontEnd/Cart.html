@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart - Anka_customs</title>
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9f7;
+      color: #333;
+    }
+
+   
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffb72e;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      color: #007ac2;
+      font-weight: bold;
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center; 
+    }
+
+    .navigation a {
+      margin-left: 1.5rem;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background-color: #007ac2;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    /* Main Cart Section */
+    .cart {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-bottom: 5rem; /* Adjust this value if needed */
+    }
+
+    .cart h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    /* Cart Items */
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem; /* Decreased space between cart items */
+      width: 70%;
+      margin-right: 1rem;
+    }
+
+    .cart-item {
+      display: flex;
+      background-color: #fff;
+      padding: 1.5rem; /* Decreased padding for a more compact look */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem; /* Space below each cart item */
+    }
+
+    .item-image img {
+      width: 150px; /* Adjusted size */
+      height: auto;
+      border-radius: 5px;
+      margin-right: 1rem;
+    }
+
+    .item-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    .item-details h2 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .price {
+      color: #ff5c5c;
+      font-weight: bold;
+      font-size: 1.2rem; /* Adjusted size */
+      margin-top: 0.5rem;
+    }
+
+    .extras {
+      color: #28a745;
+      font-size: 1rem;
+      display: flex;
+      align-items: center; /* Center the icon vertically */
+    }
+
+    .icon {
+      width: 17px; /* Adjust icon size */
+      height: 17px;
+      margin-right: 0.3rem; /* Space between icon and text */
+    }
+
+    
+    .checkout-summary {
+      width: 30%;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-right: 12rem;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      font-size: 1rem;
+    }
+
+    .total {
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+
+    .checkout-btn {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007ac2;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .checkout-btn:hover {
+      background-color: #005f9e;
+    }
+
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 2rem;
+      background-color: #333;
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .footer-nav a {
+      color: #ffffff;
+      margin-right: 1rem;
+      text-decoration: none;
+    }
+
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .social-media img {
+      width: 24px;
+      height: 24px;
+      margin-left: 1rem;
+    }
+    
+   
+    .cart-icon {
+      width: 25px; 
+      height: auto;
+      margin-left: 1.5rem; 
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Anka_customs</div>
+  <nav class="navigation" aria-label="Main Navigation">
+    <a href="#" aria-label="Cars Section">Cars</a>
+    <a href="#" aria-label="Accessories Section">Accessories</a>
+    <a href="#"><img src="vector-47.svg" alt="Cart Icon" class="cart-icon"></a> 
+    <a href="#" class="login-btn" aria-label="Login">Login</a>
+  </nav>
+</header>
+
+<main class="cart">
+  <h1>Your Cart</h1>
+  
+  <div class="cart-items">
+    <div class="cart-item">
+      <div class="item-image">
+        <img src="fc7a9558-400x256-1-6.png" alt="Hotrod model 1/10 scale image">
+      </div>
+      <div class="item-details">
+        <h2>Hotrod model 1/10 scale</h2>
+        <p class="price">$42.99</p>
+        <p class="extras">
+          <img src="OIP.jpg" alt="STL Icon" class="icon"> STL files
+          <img src="OIP.jpg" alt="STL Icon" class="icon"> and instructions
+        </p>   
+      </div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-image">
+        <img src="fc7a9558-400x256-1-17.png" alt="Hotrod model 1/10 scale image">
+      </div>
+      <div class="item-details">
+        <h2>Hotrod model 1/10 scale</h2>
+        <p class="price">$42.99</p>
+        <p class="extras">
+          <img src="OIP.jpg" alt="STL Icon" class="icon"> STL files
+          <img src="OIP.jpg" alt="STL Icon" class="icon"> and instructions
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="checkout-summary">
+    <div class="summary-row">
+      <span>Subtotal</span>
+      <span>$85.98</span>
+    </div>
+    <div class="summary-row">
+      <span>Taxes</span>
+      <span>$0.00</span>
+    </div>
+    <div class="summary-row total">
+      <span>Total</span>
+      <span>$85.98</span>
+    </div>
+    <button class="checkout-btn" aria-label="Proceed to Checkout">Checkout</button>
+  </div>
+</main>
+
+<footer class="footer">
+  <nav class="footer-nav" aria-label="Footer Navigation">
+    <a href="#" aria-label="About Us">About us</a>
+    <a href="#" aria-label="Terms and Conditions">Terms and Conditions</a>
+  </nav>
+  <div class="social-media">
+    <img src="image-5-56.png" alt="Discord icon">
+    <img src="image-6-57.png" alt="Instagram icon">
+    <img src="image-7-58.png" alt="Facebook icon">
+  </div>
+</footer>
+
+</body>
+</html>
