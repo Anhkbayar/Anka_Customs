@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f5f7;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+       
+
+        .thank-you-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            padding: 30px 50px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .thank-you-message h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .thank-you-message p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .thank-you-message a {
+            font-size: 14px;
+            color: #ffa500;
+            text-decoration: none;
+        }
+
+        .thank-you-message a:hover {
+            text-decoration: underline;
+        }
+
+       
+        .circle {
+            position: absolute;
+            border: 3px dotted #042b52; 
+            border: 3px dotted #3399ff;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: rotate 12s linear infinite;
+        }
+
+        .circle.small {
+            width: 50px;
+            height: 50px;
+            top: 15%;
+            left: 10%;
+            border-color: #033163;
+        }
+
+        .circle.medium {
+            width: 100px;
+            height: 100px;
+            top: 45%;
+            left: 85%;
+        }
+
+        .circle.large {
+            width: 150px;
+            height: 150px;
+            top: 50%;
+            left: 25%;
+        }
+
+        .circle.extra-large {
+            width: 160px;
+            height: 160px;
+            top: 65%;
+            left: 55%;
+        }
+
+        .circle.extra-extra-large {
+            width: 180px;
+            height: 180px;
+            top: 15%;
+            left: 75%;
+            border-color: #3399ff;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section (Fixed at Top) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+    
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: 'Commissioner';
+        }
+    
+        /* Navbar style */
+        nav {
+            background-color: #ffffff;
+            height: 80px;
+            width: 100%;
+        }
+    
+        /* Logo section style */
+        label.logo {
+            font-size: 32px;
+            line-height: 80px;
+            font-weight: 600;
+            padding: 0 100px;
+            color: #3b93a7;
+        }
+    
+        nav ul {
+            float: right;
+        }
+    
+        /* Navbar as horizontal */
+        nav li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 28px;
+        }
+    
+        /* Text section style */
+        nav a {
+            font-size: 24px;
+            font-weight: 500;
+            color: black;
+        }
+    
+        /* Cart section style */
+        nav ul li a.Cart {
+            background-color: #3b93a7;
+            padding: 10px 12px;
+            border-radius: 12px;
+        }
+    
+        /* Login section style */
+        nav ul li a.Login {
+            padding: 10px 40px;
+            border-radius: 15px;
+            color: #F4F6F6;
+            background-color: #3b93a7;
+        }
+    </style>
+    <nav>
+        <label class="logo">Anka_Customs</label>
+        <ul>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a class="Cart" href="#"><img src="Icons/Cart.svg" alt="Cart"></a></li>
+            <li><a class="Login" href="Profile.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Thank You Container (Centered) -->
+    <div class="thank-you-container">
+        <div class="thank-you-message">
+            <h1>Thank you for shopping with us</h1>
+            <p>Your order (#13132) has been successfully placed.</p>
+            <a href="#">View files to download</a>
+        </div>
+    </div>
+
+    <!-- Dotted Circles in Background -->
+    <div class="circle small"></div>
+    <div class="circle medium"></div>
+    <div class="circle large"></div>
+    <div class="circle extra-large"></div>
+    <div class="circle extra-extra-large"></div>
+
+    <!-- Footer Section (Fixed at Bottom) -->
+    <style>
+        footer {
+            margin-top: 110px;
+            height: 60px;
+            width: 100%;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0px -4px 10px 0px rgb(0, 0, 0, 0.25);
+        }
+    
+        footer ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+    
+        footer li {
+            font-size: 1em;
+            font-weight: 600;
+            display: inline-block;
+            line-height: 60px;
+            margin: 0px 30px;
+        }
+    </style>
+    <footer>
+        <ul>
+            <li>About us</li>
+            <li>Terms and conditions</li>
+            <li><a href="#"><img src="Icons/Discord.svg" alt="Discord"></a></li>
+            <li><a href="#"><img src="Icons/Instagram.svg" alt="Instagram"></a></li>
+            <li><a href="#"><img src="Icons/Facebook.svg" alt="Facebook"></a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

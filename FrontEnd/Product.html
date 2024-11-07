@@ -1,53 +1,288 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=viewport-width, initial-scale=1.0">
-  <title>Anka_Customs</title>
-  <link rel="stylesheet" href="ProductStyle.css">
-</head>
+  <title>Product Page - Anka_Customs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9f7;
+      color: #333;
+      margin: 0;
+      padding: 1rem;
+    }
 
-<body style="background-color: #f4f6f6;">
-  <div id="header_container"></div>
-  <div class="top_section">
-    <div class="image-gallery">
-      <img src="Icons/Image1.png" alt="Desert Racer Truck">
-      <img src="Icons/Image2.png" alt="Desert Racer Truck">
-      <img src="Icons/Image3.png" alt="Desert Racer Truck">
-      <img src="Icons/Image4.png" alt="Desert Racer Truck">
-    </div>
-    <div class="ratingdown">
+    .product-page {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .main-product {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .product-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .product-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product-details {
+      flex: 1;
+      padding: 1rem;
+      border-left: 2px solid #ddd;
+    }
+
+    .product-details h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .info-grid div {
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .manual-link {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #0eb9be;
+      text-decoration: none;
+    }
+
+    .price-and-cart {
+      display: flex;
+      align-items: center;
+      gap: 300px;
+      margin-top: 1rem;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: #ff5c5c;
+      font-weight: bold;
+    }
+
+    .add-to-cart {
+      background-color: #0eb9be;
+      color: #fff;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .product-description {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .product-description img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .related-products {
+      display: flex;
+      gap: 1rem; 
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 180px; 
+      padding: 1.5rem; 
+      text-align: center;
+    }
+
+    .product-card img.car-image {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product-card button {
+      background-color: #0eb9be;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem; 
+    }
+
+    .product-card h3 {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    .product-card .price {
+      font-size: 1.2rem;
+      color: #ff5c5c;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <iframe src="Header.html" style="width:100%; border:none;"></iframe>
+  </div>
+
+  <div class="product-page">
+    
+    <div class="main-product">
+      <div class="product-images">
+        <img src="Icons/Image1.png" alt="Desert Racer Truck">
+        <img src="Icons/Image2.png" alt="Desert Racer Truck">
+        <img src="Icons/Image3.png" alt="Desert Racer Truck">
+        <img src="Icons/Image4.png" alt="Desert Racer Truck">
+      </div>
       <div class="product-details">
         <h1>Desert Racer Truck 1/16 scale</h1>
-        <div class="download_count">
-          <img src="Icons/Downloads.svg" alt="Downloads">
-          <p class="item_downloads">+100</p>
+        
+        
+        <div class="info-grid">
+          <div>
+            <img src="Icons/vector-34.svg" alt="Arrow"> 100+ 
+            <span>
+              <img src="Icons/RatingStar.svg" alt="Star">
+            </span> 5
+          </div>
         </div>
-        <div class="download_count">
-          <img src="Icons/RatingStar.svg" alt="Rating" class="Rating">
-          <p class="item_rating">5</p>
+        <hr>
+
+        <div class="info-grid">
+          <div>Printing time</div> <div>12 hours</div>
+          <div>Glue</div> <div>No</div>
+        </div>
+        <hr>
+
+        <div class="info-grid">
+          <div></div> <div>220x220mm</div>
+          <div>Weight</div> <div>0.5kg</div>
+        </div>
+        <hr>
+
+        <div class="info-grid">
+          <div>Material</div> <div>PLA</div>
+          <div>Pieces</div> <div>20</div>
+        </div>
+        <hr>
+
+        <a href="#" class="manual-link">Click here for instruction manual 
+        </a>
+     
+        <div class="price-and-cart">
+          <div class="price">$42.99</div>
+          <button class="add-to-cart">Add To Cart</button>
         </div>
       </div>
-      <p class="price">$42.99</p>
-      <p class="product-info">
-        <strong>Prototype:</strong> Urban<br>
-        <strong>Size:</strong> 220x90mm<br>
-        <strong>Material:</strong> PLA<br>
-        <strong>Pieces:</strong> 20<br>
-        <strong>Sale:</strong> No<br>
-        <strong>Weight:</strong> 50g
-      </p>
-      <a href="#" class="instruction-link">click here for instruction manual</a>
-      <button class="add-to-cart">Add To Cart</button>
     </div>
-  </div>
-  </div>
-  <div class="description">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum nec ante sit amet aliquam...</p>
-    <img src="large-image.jpg" alt="Desert Racer Truck">
+    
+    <div class="product-description">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum nec ante at aliquam. Suspendisse vel laoreet nisi. Praesent pretium ultrices auctor. Aenean massa quam, sagittis eu sollicitudin id, euismod a ligula. Phasellus eget viverra leo. Nullam in pellentesque elit. Nulla facilisi. Fusce ornare mi sit amet ante aliquam, vitae mollis sem luctus. Cras id porta odio, ut ullamcorper urna. Pellentesque facilisis neque diam, ut sollicitudin dui tempor id. Nullam mattis rutrum leo, faucibus vehicula risus bibendum sed.</p>
+      <img src="Icons/screenshot-39-1-61.png" alt="Large Product Image">
+    </div>
+
+    <h2>Related Products</h2>
+    <div class="related-products">
+      
+      <div class="product-card">
+        <img src="Icons/car1.png" alt="Hotrod Model 1/10" class="car-image">
+        <h3>Hotrod Model 1/10</h3>
+        <p class="price">$42.99</p>
+        <p>
+          <img src="Icons/vector-34.svg" alt="Arrow"> 100+
+          <span>
+            <img src="Icons/RatingStar.svg" alt="Star">
+          </span> 5
+        </p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    
+      
+      <div class="product-card">
+        <img src="Icons/car2.png" alt="Hotrod Model 1/10" class="car-image">
+        <h3>Hotrod Model 1/10</h3>
+        <p class="price">$42.99</p>
+        <p>
+          <img src="Icons/vector-34.svg" alt="Arrow"> 100+
+          <span>
+            <img src="Icons/RatingStar.svg" alt="Star">
+          </span> 5
+        </p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    
+      
+      <div class="product-card">
+        <img src="Icons/car3.png" alt="Hotrod Model 1/10" class="car-image">
+        <h3>Hotrod Model 1/10</h3>
+        <p class="price">$42.99</p>
+        <p>
+          <img src="Icons/vector-34.svg" alt="Arrow"> 100+
+          <span>
+            <img src="Icons/RatingStar.svg" alt="Star">
+          </span> 5
+        </p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    
+      
+      <div class="product-card">
+        <img src="Icons/car4.png" alt="Hotrod Model 1/10" class="car-image">
+        <h3>Hotrod Model 1/10</h3>
+        <p class="price">$42.99</p>
+        <p>
+          <img src="Icons/vector-34.svg" alt="Arrow"> 100+
+          <span>
+            <img src="Icons/RatingStar.svg" alt="Star">
+          </span> 5
+        </p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    
   </div>
 
+  <div id="footer">
+    <iframe src="Footer.html" style="width:100%; border:none;"></iframe>
+  </div>
 
-  <script src="test.js"></script>
 </body>
+</html>
+
