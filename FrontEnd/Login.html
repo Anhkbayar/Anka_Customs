@@ -2,15 +2,35 @@
 <html>
 
 <head>
-    <title>Form site</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="loginStyle.css">
 </head>
 
-<body>
-    <form method="post" action="http://localhost:3000/login">
-        Username : <input type="text" name="username"><br><br>
-        Password : <input type="password" name="password"><br><br>
-        <input type="submit" value="submit">
-    </form>
+<body style="background-color: #f4f6f6;">
+    <div id="header_container"></div>
+    <div class="login">
+        <form method="post" action="http://localhost:3000/login">
+            <h1>Login</h1>
+
+            <label for="username">Email</label><br>
+            <input type="email" name="email"><br>
+
+            <label for="password">Password</label><br>
+            <input type="password" name="password"><br>
+            <div class="texts">
+                <div class="check">
+                    <input type="checkbox" name="remember">
+                    <label for="remember">Rememeber me</label>
+                </div>
+                <p><a href="#">Forgot password?</a></p>
+            </div>
+
+            <input type="submit" value="Login">
+
+        </form>
+    </div>
+    <div id="footer_container"></div>
 </body>
+<script src="login.js"></script>
 
 </html>
