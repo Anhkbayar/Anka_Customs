@@ -264,3 +264,143 @@ body {
       height: auto;
       margin-left: 1.5rem; 
     }
+/* endeees login */
+.text-3 {
+  position: absolute;
+  left: 138px;
+  top: 0px;
+  width: 165px;
+  height: 78px;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.rectangle-90-4 {
+  position: absolute;
+  left: 43px;
+  top: 124px;
+  width: 354px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+.text-5 {
+  position: absolute;
+  left: 43px;
+  top: 97px;
+  width: 206px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.rectangle-91-6 {
+  position: absolute;
+  left: 43px;
+  top: 215px;
+  width: 354px;
+  height: 45px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+.text-7 {
+  position: absolute;
+  left: 43px;
+  top: 189px;
+  width: 79px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.rectangle-92-8 {
+  position: absolute;
+  left: 155px;
+  top: 315px;
+  width: 132px;
+  height: 46px;
+  background-color: rgba(59, 147, 167, 1);
+  border-radius: 19px;
+}
+
+.text-9 {
+  position: absolute;
+  left: 173px;
+  top: 326px;
+  width: 95px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(244, 246, 246, 1);
+}
+
+.rectangle-93-10 {
+  position: absolute;
+  left: 43px;
+  top: 266px;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 4px;
+}
+
+.text-11 {
+  position: absolute;
+  left: 64px;
+  top: 264px;
+  width: 105px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.text-12 {
+  position: absolute;
+  left: 267px;
+  top: 262px;
+  width: 130px;
+  height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.text-13 {
+  position: absolute;
+  left: 105px;
+  top: 392px;
+  width: 231px;
+  height: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+
+.frame-4-2 {
+  position: absolute;
+  left: 499px;
+  top: 163px;
+  width: 441px;
+  height: 447px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 66px;
+}
+
+.component-1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
