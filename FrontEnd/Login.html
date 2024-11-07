@@ -1,35 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exported Figma Design</title>
-  
-  <link rel="stylesheet" href="style.css">
+    <title>Form site</title>
 </head>
+
 <body>
-  <div class="footer">
-    <iframe src="Header.html" style="width:100%; border:none;"></iframe>
-  </div>
-
-  <div class="component-1">
-    <div class="frame-4-2">
-      <p class="text-3">Login</p>
-      <div class="rectangle-90-4"></div>
-      <p class="text-5">Email Address or Username*</p>
-      <div class="rectangle-91-6"></div>
-      <p class="text-7">Password*</p>
-      <div class="rectangle-92-8"></div>
-      <p class="text-9">Login</p>
-      <div class="rectangle-93-10"></div>
-      <p class="text-11">Remember me</p>
-      <p class="text-12">Forgot password?</p>
-      <p class="text-13">Don’t have an account? Register</p>
-    </div>
-  </div>
-
-  <div class="footer">
-    <iframe src="Footer.html" style="width:100%; border:none;"></iframe>
-  </div>
+    <form method="post" action="http://localhost:3000/login">
+        Username : <input type="text" name="username"><br><br>
+        Password : <input type="password" name="password"><br><br>
+        <input type="submit" value="submit">
+    </form>
 </body>
+
 </html>
