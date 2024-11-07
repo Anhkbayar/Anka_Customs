@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, sans-serif;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
     }
     
     body {
@@ -20,11 +20,11 @@
     
     /* Sidebar styling */
     .sidebar {
-      width: 100px;
+      width: 150px;
       background-color: #247485;
       color: white;
       padding: 20px;
-      height: 100vh;
+      height: 150vh;
     }
     
     .sidebar h2 {
@@ -41,7 +41,7 @@
     }
     
     .sidebar a:hover {
-      background-color: #1c5c6c;
+      background-color: #319fba;
       padding-left: 10px;
       transition: 0.3s;
     }
@@ -56,11 +56,13 @@
     .metrics {
       display: flex;
       justify-content: space-between;
-      background-color: #3eafc3;
+      background-color: #247485;
       color: white;
-      padding: 20px;
+      padding: 10px;
       border-radius: 8px;
       margin-bottom: 20px;
+      width: 900px;
+      margin: 0 auto;
     }
     
     .metric {
@@ -80,11 +82,12 @@
     /* Chart container */
     .chart-container {
   width: 900px; /* Adjust width as needed */
-  padding: 10px;
+  height: 500px;
+  padding: 8px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* Centers the container */
+  margin: 30px  auto 0; /* Centers the container */
 }
 
   </style>
@@ -94,8 +97,8 @@
   <!-- Sidebar -->
   <div class="sidebar">
     <h2>Home</h2>
-    <a href="#">Upload</a>
-    <a href="#">All Files</a>
+    <a href="upload.html">Upload</a>
+    <a href="all-files.html">All Files</a>
   </div>
 
   <!-- Main Content -->
@@ -126,8 +129,7 @@
       <h3>Income by month</h3>
       <canvas id="incomeChart"></canvas>
     </div>
-  </div>
-  
+
 
   <!-- Chart.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
