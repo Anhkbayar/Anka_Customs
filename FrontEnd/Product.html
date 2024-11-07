@@ -59,14 +59,6 @@
       font-size: 0.9rem;
     }
 
-    /* Reduce size of vector and star icons */
-    .info-grid img[src="Icons/vector-34.svg"],
-    .product-card img[src="Icons/RatingStar.svg"] {
-      width: 16px; /* Adjust the size of the icons as needed */
-      height: auto;
-      vertical-align: middle;
-    }
-
     .manual-link {
       display: inline-block;
       margin-top: 1rem;
@@ -122,33 +114,35 @@
 
     .related-products {
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem; 
       flex-wrap: wrap;
       justify-content: center;
     }
-/* Reduce size of vector icon */
-.info-grid img[src="Icons/vector-34.svg"] {
-  width: 16px; /* Adjust the size of the vector image */
-  height: auto;
-  vertical-align: middle;
-}
 
     .product-card {
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 200px;
-      padding: 1rem;
+      width: 180px; 
+      padding: 1.5rem; 
       text-align: center;
     }
 
-    /* Keep the car images original size */
-    .product-card img {
-      width: 100%; /* Adjust this to your original size */
+    .product-card img.car-image {
+      width: 100%;
       height: auto;
       border-radius: 5px;
     }
 
+    .product-card button {
+      background-color: #0eb9be;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem; 
+    }
 
     .product-card h3 {
       font-size: 1.1rem;
@@ -161,22 +155,6 @@
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
-
-    .product-card button {
-      background-color: #0eb9be;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .related-products .product-card .info-grid img[src="Icons/vector-34.svg"] {
-      width: 12px; 
-      height: auto;
-      vertical-align: middle;
-}
-
   </style>
 </head>
 <body>
@@ -195,6 +173,8 @@
       </div>
       <div class="product-details">
         <h1>Desert Racer Truck 1/16 scale</h1>
+        
+        
         <div class="info-grid">
           <div>
             <img src="Icons/vector-34.svg" alt="Arrow"> 100+ 
@@ -202,14 +182,29 @@
               <img src="Icons/RatingStar.svg" alt="Star">
             </span> 5
           </div>
+        </div>
+        <hr>
+
+        <div class="info-grid">
           <div>Printing time</div> <div>12 hours</div>
-          <div>Bed size</div> <div>220x220mm</div>
-          <div>Material</div> <div>PLA</div>
           <div>Glue</div> <div>No</div>
+        </div>
+        <hr>
+
+        <div class="info-grid">
+          <div></div> <div>220x220mm</div>
           <div>Weight</div> <div>0.5kg</div>
+        </div>
+        <hr>
+
+        <div class="info-grid">
+          <div>Material</div> <div>PLA</div>
           <div>Pieces</div> <div>20</div>
         </div>
-        <a href="#" class="manual-link">click here for instruction manual</a>
+        <hr>
+
+        <a href="#" class="manual-link">Click here for instruction manual 
+        </a>
      
         <div class="price-and-cart">
           <div class="price">$42.99</div>
@@ -218,18 +213,16 @@
       </div>
     </div>
     
-    <!-- Product Description with Large Image -->
     <div class="product-description">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum nec ante at aliquam. Suspendisse vel laoreet nisi. Praesent pretium ultrices auctor. Aenean massa quam, sagittis eu sollicitudin id, euismod a ligula. Phasellus eget viverra leo. Nullam in pellentesque elit. Nulla facilisi. Fusce ornare mi sit amet ante aliquam, vitae mollis sem luctus. Cras id porta odio, ut ullamcorper urna. Pellentesque facilisis neque diam, ut sollicitudin dui tempor id. Nullam mattis rutrum leo, faucibus vehicula risus bibendum sed.</p>
       <img src="Icons/screenshot-39-1-61.png" alt="Large Product Image">
     </div>
 
-    <!-- Related Products Section -->
     <h2>Related Products</h2>
     <div class="related-products">
-      <!-- Product 1 -->
+      
       <div class="product-card">
-        <img src="Icons/car1.png" alt="Hotrod Model 1/10">
+        <img src="Icons/car1.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
         <p class="price">$42.99</p>
         <p>
@@ -241,9 +234,9 @@
         <button class="add-to-cart">Add to Cart</button>
       </div>
     
-      <!-- Product 2 -->
+      
       <div class="product-card">
-        <img src="Icons/car2.png" alt="Hotrod Model 1/10">
+        <img src="Icons/car2.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
         <p class="price">$42.99</p>
         <p>
@@ -255,9 +248,9 @@
         <button class="add-to-cart">Add to Cart</button>
       </div>
     
-      <!-- Product 3 -->
+      
       <div class="product-card">
-        <img src="Icons/car3.png" alt="Hotrod Model 1/10">
+        <img src="Icons/car3.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
         <p class="price">$42.99</p>
         <p>
@@ -269,9 +262,9 @@
         <button class="add-to-cart">Add to Cart</button>
       </div>
     
-      <!-- Product 4 -->
+      
       <div class="product-card">
-        <img src="Icons/car4.png" alt="Hotrod Model 1/10">
+        <img src="Icons/car4.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
         <p class="price">$42.99</p>
         <p>
@@ -283,6 +276,8 @@
         <button class="add-to-cart">Add to Cart</button>
       </div>
     </div>
+    
   </div>
 </body>
 </html>
+
