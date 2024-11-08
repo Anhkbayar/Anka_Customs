@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Upload & All Files</title>
+  <style>
+    /* Basic reset and layout styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    }
+    
+    body {
+      display: flex;
+      background-color: #e6ebec;
+    }
+    
+    /* Sidebar styling */
+    .sidebar {
+      width: 150px;
+      background-color: #247485;
+      color: white;
+      padding: 20px;
+      height: 150vh;
+    }
+    
+    .sidebar h2 {
+      margin-bottom: 20px;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    
+    .sidebar a:hover {
+      background-color: #1c5c6c;
+      padding-left: 10px;
+      transition: 0.3s;
+    }
+    
+    /* Main content styling */
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    /* Upload Page Styling */
+    .upload-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .upload-container h3 {
+      margin-bottom: 10px;
+    }
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+    
+    .form-group label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+    
+    .upload-box {
+      border: 2px dashed #ccc;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    
+    .upload-button {
+      background-color: #247485;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100px;
+      align-self: center;
+    }
+    
+    .upload-button:hover {
+      background-color: #1c5c6c;
+    }
+    
+    /* All Files Page Styling */
+    .files-table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .files-table th, .files-table td {
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    
+    .files-table th {
+      background-color: #f4f4f4;
+    }
+    
+    .files-table img {
+      width: 50px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+
+  <div class="sidebar">
+    <a href="Admin-panel.html">Home</a>
+    <a href="upload.html">Uplaod</a>
+    <h2>All Files</h2>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    
+
+    <!-- All Files Page -->
+    <div class="files-table-container" id="allFilesPage" style="margin-top: 40px;">
+      
+      <table class="files-table">
+        <thead>
+          <tr>
+            <th>Design</th>
+            <th>Price</th>
+            <th>Downloads</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="design_placeholder.png" alt="Design Image"> Design Name Here</td>
+            <td>$34.50</td>
+            <td>42</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript for file upload boxes
+    const mainImageBox = document.getElementById('mainImageBox');
+    const mainImageInput = document.getElementById('mainImageInput');
+    
+    const chassisImageBox = document.getElementById('chassisImageBox');
+    const chassisImageInput = document.getElementById('chassisImageInput');
+    
+    // Open file dialog on click
+    mainImageBox.addEventListener('click', () => mainImageInput.click());
+    chassisImageBox.addEventListener('click', () => chassisImageInput.click());
+
+    // Drag-and-drop functionality
+    [mainImageBox, chassisImageBox].forEach((box, idx) => {
+      box.addEventListener('dragover', (event) => {
+        event.preventDefault();
+        box.style.borderColor = '#247485';
+      });
+      box.addEventListener('dragleave', () => {
+        box.style.borderColor = '#ccc';
+      });
+      box.addEventListener('drop', (event) => {
+        event.preventDefault();
+        box.style.borderColor = '#ccc';
+        const file = event.dataTransfer.files[0];
+        idx === 0 ? mainImageInput.files = event.dataTransfer.files : chassisImageInput.files = event.dataTransfer.files;
+      });
+    });
+  </script>
+
+</body>
+</html>
