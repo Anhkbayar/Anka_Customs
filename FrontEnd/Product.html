@@ -11,6 +11,7 @@
       margin: 0;
       padding: 1rem;
     }
+    
 
     .product-page {
       max-width: 1200px;
@@ -97,13 +98,6 @@
       line-height: 1.6;
     }
 
-    .product-description img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      margin-top: 1rem;
-    }
-
     h2 {
       font-size: 1.5rem;
       margin-top: 2rem;
@@ -155,6 +149,24 @@
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
+
+   
+    .hover-image {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .hover-image:hover {
+      content: url('Icons/Screenshot 2024-11-08 091908.png'); 
+    }
+
+    
+    .screenshot-image {
+      width: 800px; 
+      height: auto;
+    }
   </style>
 </head>
 <body>
@@ -173,7 +185,6 @@
       </div>
       <div class="product-details">
         <h1>Desert Racer Truck 1/16 scale</h1>
-        
         
         <div class="info-grid">
           <div>
@@ -203,38 +214,28 @@
         </div>
         <hr>
 
-        <a href="#" class="manual-link">Click here for instruction manual 
-        </a>
+        <a href="#" class="manual-link">Click here for instruction manual</a>
      
         <div class="price-and-cart">
           <div class="price">$42.99</div>
-          <button class="add-to-cart">Add To Cart</button>
+          <button class="add-to-cart" onclick="window.location.href='Cart.html'">Add To Cart</button>
         </div>
       </div>
     </div>
     
     <div class="product-description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum nec ante at aliquam. Suspendisse vel laoreet nisi. Praesent pretium ultrices auctor. Aenean massa quam, sagittis eu sollicitudin id, euismod a ligula. Phasellus eget viverra leo. Nullam in pellentesque elit. Nulla facilisi. Fusce ornare mi sit amet ante aliquam, vitae mollis sem luctus. Cras id porta odio, ut ullamcorper urna. Pellentesque facilisis neque diam, ut sollicitudin dui tempor id. Nullam mattis rutrum leo, faucibus vehicula risus bibendum sed.</p>
-      <img src="Icons/screenshot-39-1-61.png" alt="Large Product Image">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla bibendum nec ante at aliquam. Suspendisse vel laoreet nisi.</p>
+      <img src="Icons/screenshot-39-1-61.png" alt="Large Product Image" class="hover-image screenshot-image">
     </div>
 
     <h2>Related Products</h2>
     <div class="related-products">
-      
       <div class="product-card">
         <img src="Icons/car1.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
         <p class="price">$42.99</p>
-        <p>
-          <img src="Icons/vector-34.svg" alt="Arrow"> 100+
-          <span>
-            <img src="Icons/RatingStar.svg" alt="Star">
-          </span> 5
-        </p>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="window.location.href='Cart.html'">Add to Cart</button>
       </div>
-    
-      
       <div class="product-card">
         <img src="Icons/car2.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
@@ -245,10 +246,9 @@
             <img src="Icons/RatingStar.svg" alt="Star">
           </span> 5
         </p>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="window.location.href='Cart.html'">Add to Cart</button>
       </div>
     
-      
       <div class="product-card">
         <img src="Icons/car3.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
@@ -259,10 +259,9 @@
             <img src="Icons/RatingStar.svg" alt="Star">
           </span> 5
         </p>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="window.location.href='Cart.html'">Add to Cart</button>
       </div>
     
-      
       <div class="product-card">
         <img src="Icons/car4.png" alt="Hotrod Model 1/10" class="car-image">
         <h3>Hotrod Model 1/10</h3>
@@ -273,16 +272,15 @@
             <img src="Icons/RatingStar.svg" alt="Star">
           </span> 5
         </p>
-        <button class="add-to-cart">Add to Cart</button>
+        <button class="add-to-cart" onclick="window.location.href='Cart.html'">Add to Cart</button>
       </div>
     </div>
-    
   </div>
-
+  
   <div id="footer">
     <iframe src="Footer.html" style="width:100%; border:none;"></iframe>
   </div>
-
 </body>
 </html>
+
 
